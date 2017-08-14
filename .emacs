@@ -2,11 +2,14 @@
 (if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
 (if (fboundp 'tool-bar-mode) (tool-bar-mode -1))
 
-(load-file "variable-font.el")
-(load-file "copy-paste-behavior.el")
-(load-file "keyboard-editing.el")
-(load-file "window-navigating.el")
-(load-file "saving-files.el")
+(add-to-list 'load-path (file-name-directory (or load-file-name buffer-file-name)))
+(add-to-list 'load-path (concat (file-name-directory (or load-file-name buffer-file-name)) "lisp"))
 
-(load-file "lisp/cancel-buffer-output.el")
+(load "variable-font.el")
+(load "copy-paste-behavior.el")
+(load "keyboard-editing.el")
+(load "window-navigating.el")
+(load "saving-files.el")
+
+(load "cancel-buffer-output.el")
 (require 'cancel-buffer-output)

@@ -1,6 +1,5 @@
 (global-set-key [f1] 'dabbrev-expand)
 
-(load-file "lisp/goto-last-change.el")
 (require 'goto-last-change)
 (global-set-key [f5] 'goto-last-change)
 
