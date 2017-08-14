@@ -13,3 +13,5 @@
 
 (load "cancel-buffer-output.el")
 (require 'cancel-buffer-output)
+
+(require 'noflet)
