@@ -10,6 +10,7 @@
 (load "keyboard-editing.el")
 (load "window-navigating.el")
 (load "saving-files.el")
+(load "whitespace-control.el")
 
 (load "cancel-buffer-output.el")
 (require 'cancel-buffer-output)
