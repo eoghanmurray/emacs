@@ -4,3 +4,5 @@
 (load-file "window-navigating.el")
 (load-file "saving-files.el")
 
+(load-file "lisp/cancel-buffer-output.el")
+(require 'cancel-buffer-output)
