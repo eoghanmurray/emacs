@@ -1,3 +1,6 @@
+(if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
+(if (fboundp 'tool-bar-mode) (tool-bar-mode -1))
+
 (load-file "variable-font.el")
 (load-file "copy-paste-behavior.el")
 (load-file "keyboard-editing.el")
