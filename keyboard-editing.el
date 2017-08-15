@@ -11,3 +11,6 @@
     (if (/= (point) here)
 	(delete-region (point) here))))
 (global-set-key [(meta s)] 'delete-whitespace)
+
+;disable overwrite mode
+(global-unset-key [insert])
