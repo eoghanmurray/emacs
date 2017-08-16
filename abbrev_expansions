@@ -1,0 +1,7 @@
+;;-*-coding: utf-8;-*-
+(define-abbrev-table 'python-mode-abbrev-table
+  '(
+    ("improt" "import" nil 2)
+    ("pdb" "import pdb; pdb.set_trace()" nil 2)  ;; annoyingly "pdb;" doesn't work as the trigger
+    ("retrun" "return" nil 2)
+   ))

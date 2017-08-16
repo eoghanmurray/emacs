@@ -16,3 +16,7 @@
 (require 'cancel-buffer-output)
 
 (require 'noflet)
+
+(setq abbrev-file-name (concat (file-name-directory (or load-file-name buffer-file-name)) "abbrev_expansions"))
+(add-hook 'python-mode-hook (lambda () (abbrev-mode t)))
+;;(setq-default abbrev-mode t)
