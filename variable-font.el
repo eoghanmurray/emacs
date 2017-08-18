@@ -17,3 +17,6 @@
 (add-hook 'sql-mode-hook 'switch-to-fixed-width-font)
 (add-hook 'sql-interactive-mode-hook 'switch-to-fixed-width-font)
 (add-hook 'text-mode-hook 'switch-to-fixed-width-font)
+(add-hook 'dired-mode-hook 'switch-to-fixed-width-font)
+(add-hook 'term-mode-hook 'switch-to-fixed-width-font)
+(add-hook 'org-mode-hook 'switch-to-fixed-width-font)
